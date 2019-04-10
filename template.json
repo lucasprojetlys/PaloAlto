@@ -390,7 +390,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.2.6",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "subnet": {
                                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-TRUST-01')]"
                             }
@@ -399,7 +399,7 @@
                 ],
                 "backendAddressPools": [
                     {
-                        "name": "BackendPool1",
+                        "name": "BackendPool2",
                         "etag": "W/\"50525965-7231-426d-b9e5-5cdb43c103cc\"",
                         "properties": {
                             "provisioningState": "Succeeded"
@@ -423,7 +423,7 @@
                             "enableTcpReset": false,
                             "loadDistribution": "Default",
                             "backendAddressPool": {
-                                "id": "[concat(resourceId('Microsoft.Network/loadBalancers', parameters('loadBalancers_myPrivateLB_name')), '/backendAddressPools/BackendPool1')]"
+                                "id": "[concat(resourceId('Microsoft.Network/loadBalancers', parameters('loadBalancers_myPrivateLB_name')), '/backendAddressPools/BackendPool2')]"
                             },
                             "probe": {
                                 "id": "[concat(resourceId('Microsoft.Network/loadBalancers', parameters('loadBalancers_myPrivateLB_name')), '/probes/lbprobe')]"
@@ -619,7 +619,12 @@
                                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-TRUST-01')]"
                             },
                             "primary": true,
-                            "privateIPAddressVersion": "IPv4"
+                            "privateIPAddressVersion": "IPv4",
+                            "loadBalancerBackendAddressPools": [
+                                {
+                                    "id": "[concat(resourceId('Microsoft.Network/loadBalancers', parameters('loadBalancers_myPrivateLB_name')), '/backendAddressPools/BackendPool2')]"
+                                }
+                            ] 
                         }
                     }
                 ],
@@ -652,7 +657,7 @@
                             "privateIPAddressVersion": "IPv4",
                             "loadBalancerBackendAddressPools": [
                                 {
-                                    "id": "[concat(resourceId('Microsoft.Network/loadBalancers', parameters('loadBalancers_myPrivateLB_name')), '/backendAddressPools/BackendPool1')]"
+                                    "id": "[concat(resourceId('Microsoft.Network/loadBalancers', parameters('loadBalancers_myPrivateLB_name')), '/backendAddressPools/BackendPool2')]"
                                 }
                             ]                            
                         }
