@@ -682,7 +682,12 @@
                                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-TRUST-01')]"
                             },
                             "primary": true,
-                            "privateIPAddressVersion": "IPv4" 
+                            "privateIPAddressVersion": "IPv4",
+                            "loadBalancerBackendAddressPools": [
+                                {
+                                    "id": "[concat(resourceId('Microsoft.Network/loadBalancers', parameters('loadBalancers_myPrivateLB_name')), '/backendAddressPools/BackendPool1')]"
+                                }
+                            ]
                         }
                     }
                 ],
