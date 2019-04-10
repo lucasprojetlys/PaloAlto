@@ -536,14 +536,12 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-UNTRUST-01')]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
                 "resourceGuid": "454c7dc0-70e5-4b55-985e-f431347f3674",
                 "ipConfigurations": [
                     {
                         "name": "ipconfig-untrust",
                         "etag": "W/\"3a751bf9-313a-4c0a-8770-7ffe299f3847\"",
                         "properties": {
-                            "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.1.252",
                             "privateIPAllocationMethod": "Static",
                             "subnet": {
@@ -574,14 +572,12 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-UNTRUST-01')]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
                 "resourceGuid": "c100d27a-7af0-4e75-a7f5-f56dcf05230a",
                 "ipConfigurations": [
                     {
                         "name": "ipconfig-untrust",
                         "etag": "W/\"148e0ae2-9f7d-41c4-8b63-e988d343ece2\"",
                         "properties": {
-                            "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.1.253",
                             "privateIPAllocationMethod": "Static",
                             "subnet": {
@@ -623,12 +619,7 @@
                                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-TRUST-01')]"
                             },
                             "primary": true,
-                            "privateIPAddressVersion": "IPv4",
-                            "loadBalancerBackendAddressPools": [
-                                {
-                                    "id": "[concat(resourceId('Microsoft.Network/loadBalancers', parameters('loadBalancers_myPrivateLB_name')), '/backendAddressPools/BackendPool1')]"
-                                }
-                            ]
+                            "privateIPAddressVersion": "IPv4"
                         }
                     }
                 ],
@@ -681,7 +672,6 @@
                 "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_nsg_mgmt_name'))]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
                 "description": "Allow intra network traffic",
                 "protocol": "*",
                 "sourcePortRange": "*",
@@ -705,7 +695,6 @@
                 "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_nsg_mgmt_name'))]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
                 "description": "Rule",
                 "protocol": "*",
                 "sourcePortRange": "*",
@@ -729,7 +718,6 @@
                 "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_nsg_mgmt_name'))]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
                 "description": "Default-Deny if we don't match Allow rule",
                 "protocol": "*",
                 "sourcePortRange": "*",
@@ -754,7 +742,6 @@
                 "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_nsg_mgmt_name'))]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
                 "resourceGuid": "46967fb9-1a7e-411c-bf04-aae0e3a299cc",
                 "addressSpace": {
                     "addressPrefixes": [
@@ -766,7 +753,6 @@
                         "name": "SUBNET-COM-MGMT-01",
                         "etag": "W/\"8df8f610-c582-4774-b7bd-0cf7b184579e\"",
                         "properties": {
-                            "provisioningState": "Succeeded",
                             "addressPrefix": "10.110.0.0/24",
                             "networkSecurityGroup": {
                                 "id": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_nsg_mgmt_name'))]"
@@ -807,7 +793,6 @@
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_vnet_FW_name'))]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
                 "addressPrefix": "10.110.0.0/24",
                 "delegations": []
             }
@@ -820,7 +805,6 @@
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_vnet_FW_name'))]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
                 "addressPrefix": "10.110.2.0/24",
                 "delegations": []
             }
@@ -833,7 +817,6 @@
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_vnet_FW_name'))]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
                 "addressPrefix": "10.110.1.0/24",
                 "delegations": []
             }
@@ -861,7 +844,6 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-MGMT-01')]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
                 "resourceGuid": "02c1efa0-93a8-4f65-91f3-32220168fba1",
                 "ipConfigurations": [
                     {
@@ -870,7 +852,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.0.4",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mgmtIP_appmanagement0_name'))]"
                             },
@@ -911,9 +893,8 @@
                         "name": "ipconfig-mgmt",
                         "etag": "W/\"6488818c-8bfc-4eca-80db-6e757bd5608d\"",
                         "properties": {
-                            "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.0.5",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mgmtIP_appmanagement1_name'))]"
                             },
