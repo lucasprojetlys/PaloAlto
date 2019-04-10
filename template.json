@@ -109,7 +109,7 @@
                             "destinationPortRange": "*",
                             "sourceAddressPrefix": "0.0.0.0/0",
                             "destinationAddressPrefix": "*",
-                            "access": "Allow",
+                            "access": "Deny",
                             "priority": 100,
                             "direction": "Inbound",
                             "sourcePortRanges": [],
@@ -545,7 +545,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.1.252",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "subnet": {
                                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-UNTRUST-01')]"
                             },
@@ -559,12 +559,6 @@
                         }
                     }
                 ],
-                "dnsSettings": {
-                    "dnsServers": [],
-                    "appliedDnsServers": [],
-                    "internalDomainNameSuffix": "xf5zmrt4dioedpyevlqohiuzze.parx.internal.cloudapp.net"
-                },
-                "macAddress": "00-0D-3A-3C-3E-20",
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": true,
                 "primary": false,
@@ -589,7 +583,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.1.253",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "subnet": {
                                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-UNTRUST-01')]"
                             },
@@ -603,12 +597,6 @@
                         }
                     }
                 ],
-                "dnsSettings": {
-                    "dnsServers": [],
-                    "appliedDnsServers": [],
-                    "internalDomainNameSuffix": "xf5zmrt4dioedpyevlqohiuzze.parx.internal.cloudapp.net"
-                },
-                "macAddress": "00-0D-3A-95-22-8D",
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": true,
                 "primary": false,
@@ -633,7 +621,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.2.252",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "subnet": {
                                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-TRUST-01')]"
                             },
@@ -647,12 +635,6 @@
                         }
                     }
                 ],
-                "dnsSettings": {
-                    "dnsServers": [],
-                    "appliedDnsServers": [],
-                    "internalDomainNameSuffix": "xf5zmrt4dioedpyevlqohiuzze.parx.internal.cloudapp.net"
-                },
-                "macAddress": "00-0D-3A-3C-3A-B6",
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": true,
                 "primary": false,
@@ -677,7 +659,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.2.253",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "subnet": {
                                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-TRUST-01')]"
                             },
@@ -691,12 +673,6 @@
                         }
                     }
                 ],
-                "dnsSettings": {
-                    "dnsServers": [],
-                    "appliedDnsServers": [],
-                    "internalDomainNameSuffix": "xf5zmrt4dioedpyevlqohiuzze.parx.internal.cloudapp.net"
-                },
-                "macAddress": "00-0D-3A-3C-1A-D2",
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": true,
                 "primary": false,
