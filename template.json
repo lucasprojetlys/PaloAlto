@@ -71,7 +71,7 @@
             "type": "String"
         },
         "storageAccounts_storage_name": {
-            "defaultValue": "storageName",
+            "defaultValue": "storagename",
             "type": "String"
         },
         "availabilitySets_firewallAvSetmomp_name": {
