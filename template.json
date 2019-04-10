@@ -71,7 +71,7 @@
             "type": "String"
         },
         "storageAccounts_storage_name": {
-            "defaultValue": "azpstorage",
+            "defaultValue": "storageName",
             "type": "String"
         },
         "availabilitySets_firewallAvSetmomp_name": {
@@ -494,8 +494,8 @@
                             "frontendIPConfiguration": {
                                 "id": "[concat(resourceId('Microsoft.Network/loadBalancers', parameters('loadBalancers_myPublicLB_name')), '/frontendIPConfigurations/LoadBalancerFrontEnd')]"
                             },
-                            "frontendPort": 80,
-                            "backendPort": 80,
+                            "frontendPort": 443,
+                            "backendPort": 443,
                             "enableFloatingIP": false,
                             "idleTimeoutInMinutes": 4,
                             "protocol": "Tcp",
@@ -517,7 +517,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "protocol": "Tcp",
-                            "port": 80,
+                            "port": 443,
                             "intervalInSeconds": 5,
                             "numberOfProbes": 2
                         }
