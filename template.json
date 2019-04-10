@@ -612,14 +612,11 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-TRUST-01')]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
-                "resourceGuid": "b7bb6d90-87c3-4563-91b0-4c7da394ce88",
                 "ipConfigurations": [
                     {
                         "name": "ipconfig-trust",
                         "etag": "W/\"afcfda65-942a-43ce-9e0b-ba110b986a5d\"",
                         "properties": {
-                            "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.2.253",
                             "privateIPAllocationMethod": "Static",
                             "subnet": {
@@ -650,14 +647,11 @@
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_vnet_FW_name'), 'SUBNET-COM-TRUST-01')]"
             ],
             "properties": {
-                "provisioningState": "Succeeded",
-                "resourceGuid": "b7bb6d90-87c3-4563-91b0-4c7da394ce88",
                 "ipConfigurations": [
                     {
                         "name": "ipconfig-trust",
                         "etag": "W/\"afcfda65-942a-43ce-9e0b-ba110b986a5d\"",
                         "properties": {
-                            "provisioningState": "Succeeded",
                             "privateIPAddress": "10.110.2.252",
                             "privateIPAllocationMethod": "Static",
                             "subnet": {
