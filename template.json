@@ -4,27 +4,27 @@
     "parameters": {
         "virtualNetworks_vnet_FW_name": {
             "defaultValue": "VNET-AZP-TRANSIT",
-            "type": "String"
+            "type": "string"
         },
         "loadBalancers_myPrivateLB_name": {
             "defaultValue": "AZP-EQLB-TRUST-01",
-            "type": "String"
+            "type": "string"
         },
         "loadBalancers_myPublicLB_name": {
             "defaultValue": "AZP-EQLB-UNTRUST-01",
-            "type": "String"
+            "type": "string"
         },
         "publicIPAddresses_PUB_EQLB_UNTRUST_01_name": {
             "defaultValue": "PUB-EQLB-UNTRUST-01",
-            "type": "String"
+            "type": "string"
         },
         "virtualMachines_VM_Series0_name": {
             "defaultValue": "azpwhiteice",
-            "type": "String"
+            "type": "string"
         },
         "virtualMachines_VM_Series0_username": {
             "defaultValue": "admin",
-            "type": "String"
+            "type": "string"
         },
         "virtualMachines_VM_Series0_password": {
             "defaultValue": "admin",
@@ -32,11 +32,11 @@
         },
         "virtualMachines_VM_Series1_name": {
             "defaultValue": "azpblackice",
-            "type": "String"
+            "type": "string"
         },
         "virtualMachines_VM_Series1_username": {
             "defaultValue": "admin",
-            "type": "String"
+            "type": "string"
         },
         "virtualMachines_VM_Series1_password": {
             "defaultValue": "admin",
@@ -44,47 +44,47 @@
         },
         "networkSecurityGroups_nsg_mgmt_name": {
             "defaultValue": "Default-nsg",
-            "type": "String"
+            "type": "string"
         },
         "networkInterfaces_eth0_VM_Series0_name": {
             "defaultValue": "azpwhiteice-mgmt-eth0",
-            "type": "String"
+            "type": "string"
         },
         "networkInterfaces_eth0_VM_Series1_name": {
             "defaultValue": "azpblackice-mgmt-eth0",
-            "type": "String"
+            "type": "string"
         },
         "networkInterfaces_eth1_VM_Series0_name": {
             "defaultValue": "azpwhiteice-untrust-eth1",
-            "type": "String"
+            "type": "string"
         },
         "networkInterfaces_eth1_VM_Series1_name": {
             "defaultValue": "azpblackice-untrust-eth1",
-            "type": "String"
+            "type": "string"
         },
         "networkInterfaces_eth2_VM_Series0_name": {
             "defaultValue": "azpwhiteice-trust-eth2",
-            "type": "String"
+            "type": "string"
         },
         "networkInterfaces_eth2_VM_Series1_name": {
             "defaultValue": "azpblackice-trust-eth2",
-            "type": "String"
+            "type": "string"
         },
         "storageAccounts_storage_name": {
             "defaultValue": "storagename",
-            "type": "String"
+            "type": "string"
         },
         "availabilitySets_firewallAvSetmomp_name": {
             "defaultValue": "AS-INFRA-PAN-01",
-            "type": "String"
+            "type": "string"
         },
         "publicIPAddresses_mgmtIP_appmanagement0_name": {
             "defaultValue": "PUB-WHITEICE-MGMT-01",
-            "type": "String"
+            "type": "string"
         },
         "publicIPAddresses_mgmtIP_appmanagement1_name": {
             "defaultValue": "PUB-BLACKICE-MGMT-01",
-            "type": "String"
+            "type": "string"
         }
     },
     "variables": {},
